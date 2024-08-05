@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-// import useUserStore from "@/store/user";
 
 const Home = () => import("@/views/Home.vue");
 const About = () => import("@/views/About.vue");
@@ -19,15 +18,8 @@ const routes = [
   },
   {
     name: "manage",
-    // alias: "/manage",
     path: "/manage-music",
     component: Manage,
-    // beforeEnter: (to, from, next) => {
-    //   next();
-    // },
-    // meta: {
-    //   requiresAuth: true,
-    // },
   },
   {
     path: "/manage",
@@ -55,14 +47,6 @@ router.beforeEach((to, from, next) => {
     next();
     return;
   }
-
-  // const store = useUserStore();
-
-  // if (store.userLoggedIn) {
-  //   console.log("efwfew");
-  // } else {
-  //   next({ name: "home" });
-  // }
 });
 
 export default router;
