@@ -2,8 +2,16 @@
   "home": {
     "listen": "Listen to Great Music!"
   },
+  "header": {
+    "name": "Music",
+    "about": "about",
+    "Login / Register": "Login / Register",
+    "Manage": "Manage",
+    "Logout": "Logout"
+  },
   "song": {
-    "comment_count": "No comments | 1 comment | {count} comments"
+    "comment_count": "No comments | 1 comment | {count} comments",
+    "Your comment here...": "Your comment here..."
   },
   "register": {
     "accept": "I accept Music`s {0}",
@@ -11,5 +19,9 @@
   },
   "manage": {
     "my_song": "My Songs"
+  },
+  "about": {
+    "ver": "ver",
+    "term": "Terms of use"
   }
 }
