@@ -5,10 +5,10 @@
       <!-- App Name -->
       <router-link
         class="text-white font-bold uppercase text-2xl mr-4"
-        :to="{ name: 'home' }"
+        :to="{ path: '/' }"
         exact-active-class="no-active"
       >
-      {{ $t("header.name") }}
+        {{ $t("header.name") }}
       </router-link>
 
       <div class="flex flex-grow items-center">
@@ -16,10 +16,15 @@
         <ul class="flex flex-row mt-1">
           <!-- Navigation Links -->
           <li>
-            <router-link class="px-2 text-white" to="/about">{{ $t("header.about") }}</router-link>
+            <router-link class="px-2 text-white" to="/about">{{
+              $t("header.about")
+            }}</router-link>
           </li>
           <li v-if="!userStore.userLoggedIn">
-            <a class="px-2 text-white" href="#" @click.prevent="toggleAuthModal"
+            <a
+              class="px-2 text-white"
+              href="#"
+              @click.prevent="toggleAuthModal"
               >{{ $t("header.Login / Register") }}</a
             >
           </li>
@@ -30,9 +35,9 @@
               </router-link>
             </li>
             <li>
-              <a class="px-2 text-white" href="#" @click.prevent="signOut"
-                >{{ $t("header.Logout") }}</a
-              >
+              <a class="px-2 text-white" href="#" @click.prevent="signOut">{{
+                $t("header.Logout")
+              }}</a>
             </li>
           </template>
         </ul>

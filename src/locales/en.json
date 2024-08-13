@@ -19,5 +19,9 @@
   },
   "manage": {
     "my_song": "My Songs"
+  },
+  "about": {
+    "ver": "ver",
+    "term": "Terms of use"
   }
 }
