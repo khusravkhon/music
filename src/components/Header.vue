@@ -16,28 +16,38 @@
         <ul class="flex flex-row mt-1">
           <!-- Navigation Links -->
           <li>
-            <router-link class="px-2 text-white" to="/about">{{
-              $t("header.about")
-            }}</router-link>
+            <router-link class="px-2 text-white" to="/about">
+              <img src="/assets/header/mobile-phone.png" alt="" srcset="" />
+            </router-link>
           </li>
           <li v-if="!userStore.userLoggedIn">
-            <a
-              class="px-2 text-white"
-              href="#"
+            <img
+              src="/assets/header/arrow-right-to-bracket.png"
+              class="mt-[24px] text-white"
               @click.prevent="toggleAuthModal"
-              >{{ $t("header.Login / Register") }}</a
-            >
+              alt=""
+              srcset=""
+            />
           </li>
           <template v-else>
             <li>
               <router-link class="px-2 text-white" to="/manage-music">
-                {{ $t("header.Manage") }}
+                <img
+                  class="mx-2"
+                  src="/assets/header/download.png"
+                  alt=""
+                  srcset=""
+                />
               </router-link>
             </li>
             <li>
-              <a class="px-2 text-white" href="#" @click.prevent="signOut">{{
-                $t("header.Logout")
-              }}</a>
+              <img
+                src="/assets/header/arrow-right-from-bracket.png"
+                class="mt-[24px] text-white"
+                @click.prevent="signOut"
+                alt=""
+                srcset=""
+              />
             </li>
           </template>
         </ul>
