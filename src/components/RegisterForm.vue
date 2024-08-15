@@ -14,7 +14,7 @@
   >
     <!-- Name -->
     <div class="mb-3">
-      <label class="inline-block mb-2">Name</label>
+      <label class="inline-block mb-2">{{ $t("RegisterForm.name") }}</label>
       <vee-field
         type="text"
         name="name"
@@ -25,7 +25,7 @@
     </div>
     <!-- Email -->
     <div class="mb-3">
-      <label class="inline-block mb-2">Email</label>
+      <label class="inline-block mb-2">{{ $t("RegisterForm.Email") }}</label>
       <vee-field
         name="email"
         type="email"
@@ -36,7 +36,7 @@
     </div>
     <!-- Age -->
     <div class="mb-3">
-      <label class="inline-block mb-2">Age</label>
+      <label class="inline-block mb-2">{{ $t("RegisterForm.Age") }}</label>
       <vee-field
         name="age"
         type="number"
@@ -46,7 +46,7 @@
     </div>
     <!-- Password -->
     <div class="mb-3">
-      <label class="inline-block mb-2">Password</label>
+      <label class="inline-block mb-2">{{ $t("RegisterForm.Password") }}</label>
       <vee-field name="password" :bails="false" v-slot="{ field, errors }">
         <input
           class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
@@ -61,7 +61,9 @@
     </div>
     <!-- Confirm Password -->
     <div class="mb-3">
-      <label class="inline-block mb-2">Confirm Password</label>
+      <label class="inline-block mb-2">{{
+        $t("RegisterForm.Confirm Password")
+      }}</label>
       <vee-field
         name="confirm_password"
         type="password"
@@ -72,30 +74,32 @@
     </div>
     <!-- Country -->
     <div class="mb-3">
-      <label class="inline-block mb-2">Country</label>
+      <label class="inline-block mb-2">{{ $t("RegisterForm.Country") }}</label>
       <vee-field
         as="select"
         name="country"
         class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
       >
-        <option value="USA">USA</option>
-        <option value="Mexico">Mexico</option>
-        <option value="Germany">Germany</option>
-        <option value="Antarctica">Antarctica</option>
+        <option value="USA">{{ $t("RegisterForm.USA") }}</option>
+        <option value="Mexico">{{ $t("RegisterForm.Mexico") }}</option>
+        <option value="Germany">{{ $t("RegisterForm.Germany") }}</option>
+        <option value="Antarctica">
+          {{ $t("RegisterForm.Antarctica") }}
+        </option>
       </vee-field>
       <ErrorMessage class="text-red-600" name="country" />
     </div>
     <!-- Who are you -->
     <div class="mb-3">
-      <label class="inline-block mb-2">Sphere</label>
+      <label class="inline-block mb-2">{{ $t("RegisterForm.Sphere") }}</label>
       <vee-field
         as="select"
         name="sphere"
         class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
       >
-        <option value="Listener">Listener</option>
-        <option value="Performer">Performer</option>
-        <option value="Developer">Developer</option>
+        <option value="Listener">{{ $t("RegisterForm.Listener") }}</option>
+        <option value="Performer">{{ $t("RegisterForm.Performer") }}</option>
+        <option value="Developer">{{ $t("RegisterForm.Developer") }}</option>
       </vee-field>
       <ErrorMessage class="text-red-600 block" name="sphere" />
     </div>
@@ -117,7 +121,7 @@
       class="block w-full bg-purple-600 text-white py-1.5 px-3 rounded transition hover:bg-purple-700"
       :disabled="reg_in_submission"
     >
-      Submit
+      {{ $t("RegisterForm.Submit") }}
     </button>
   </vee-form>
 </template>

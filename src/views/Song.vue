@@ -11,7 +11,7 @@
         <button
           @click.prevent="newSong(song)"
           type="button"
-          class="z-50 h-24 w-24 text-3xl bg-white text-black rounded-full focus:outline-none"
+          class="z-50 h-20 w-[200px] text-3xl bg-white text-black rounded-full focus:outline-none"
         >
           <i class="fas fa-play"></i>
         </button>
@@ -54,7 +54,7 @@
               as="textarea"
               name="comment"
               class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded mb-4"
-              :placeholder="$t('song.Your comment here...')"
+              placeholder="Your comment here..."
             ></vee-field>
             <ErrorMessage class="text-red-600" name="comment" />
             <button
@@ -62,7 +62,7 @@
               class="py-1.5 px-3 rounded text-white bg-green-600 block"
               :disabled="comment_in_submission"
             >
-              Submit
+              {{ $tc("song.Submit") }}
             </button>
           </vee-form>
           <!-- Sort Comments -->
@@ -70,8 +70,8 @@
             v-model="sort"
             class="block mt-4 py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
           >
-            <option value="1">Latest</option>
-            <option value="2">Oldest</option>
+            <option value="1">{{ $tc("song.Latest") }}</option>
+            <option value="2">{{ $tc("song.Oldest") }}</option>
           </select>
         </div>
       </div>
@@ -108,7 +108,6 @@ export default {
   data() {
     return {
       song: {},
-      placeholder: this.$t('song.Your comment here...'),
       schema: {
         comment: "required|min:3",
       },

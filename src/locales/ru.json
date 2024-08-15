@@ -1,17 +1,21 @@
 {
   "home": {
-    "listen": "Слушайте отличную музыку!"
+    "listen": "Слушайте отличную музыку!",
+    "Songs": "Песни"
   },
   "header": {
-    "name": "Mузыка",
-    "about": "O приложении",
-    "Login / Register": "Войты / Зарегистрируйтесь",
-    "Manage": "Загрузить",
-    "Logout": "Выход"
+    "name": "Mузыка"
   },
   "song": {
     "comment_count": "Нет комментариев | 1 комментарий | {count} комментарий",
-    "Your comment here...": "Ваш комментарий здесь.."
+    "Submit": "Сохранить",
+    "Latest": "Новейший",
+    "Oldest": "Самый старый"
+  },
+  "auth": {
+    "Your Account": "Ваша учетная запись",
+    "Login": "Логин",
+    "Register": "Зарегистрировать"
   },
   "manage": {
     "my_song": "Мои песни"
@@ -19,5 +23,37 @@
   "about": {
     "ver": "версия",
     "term": "Условия использования"
+  },
+  "compositionitem": {
+    "Song Title": "Название песни",
+    "Genre": "Жанр",
+    "Submit": "Сохранить",
+    "Go Back": "Возвращаться"
+  },
+  "LoginForm": {
+    "Email": "Электронная почта",
+    "Password": "Пароль",
+    "Submit": "Вход"
+  },
+  "RegisterForm": {
+    "name": "имя",
+    "Email": "Электронная почта",
+    "Age": "Возраст",
+    "Password": "Пароль",
+    "Confirm Password": "Подтвердите пароль",
+    "Country": "Страна",
+    "USA": "США",
+    "Mexico": "Мексика",
+    "Germany": "Германия",
+    "Antarctica": "Антарктида",
+    "Sphere": "Сфера",
+    "Listener": "Слушатель",
+    "Performer": "Исполнитель",
+    "Developer": "Разработчик",
+    "Submit": "Сохранить"
+  },
+  "Upload": {
+    "Upload": "Загружать",
+    "Drop your files here": "Сбросьте свои файлы сюда"
   }
 }
