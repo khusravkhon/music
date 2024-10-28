@@ -36,35 +36,35 @@ npm run preview
 
 ## Scripts
 
-- [Development Server](npm run dev)
-- [Build for Production](npm run build)
-- [Preview Production Build](npm run preview)
-- [Run Unit Tests](npm run test:unit)
-- [Run Cypress E2E Tests](npm run test:e2e)
-- [Run E2E Tests in CI](npm run test:e2e:ci)
-- [Linting and Formatting](npm run lint)
+- Development Server: npm run dev
+- Build for Production: npm run build
+- Preview Production Build: npm run preview
+- Run Unit Tests: npm run test:unit
+- Run Cypress E2E Tests: npm run test:e2e
+- Run E2E Tests in CI: npm run test:e2e:ci
+- Linting and Formatting: npm run lint
 
 ## Features
 
-- [Firebase Integration](Authentication and real-time data storage.)
-- [State Management](Using Pinia for managing global state.)
-- [Responsive Design](Tailwind CSS for adaptive layouts.)
-- [Progress Bars](Visual loading indicators with NProgress.)
-- [E2E Testing](Full end-to-end testing setup with Cypress.)
+- Firebase Integration: Authentication and real-time data storage.
+- State Management: Using Pinia for managing global state.
+- Responsive Design: Tailwind CSS for adaptive layouts.
+- Progress Bars: Visual loading indicators with NProgress.
+- E2E Testing: Full end-to-end testing setup with Cypress.
 
 ## Tech Stack
-- [Vue 3](Framework for building the UI)
-- [Pinia] (State management library)
-- [Firebase] (Backend-as-a-Service)
-- [Tailwind CSS] (Utility-first CSS framework)
-- [Cypress] (End-to-end testing)
-- [Vitest] (Unit testing)
+- Vue 3: Framework for building the UI
+- Pinia: State management library
+- Firebase: Backend-as-a-Service
+- Tailwind CSS: Utility-first CSS framework
+- Cypress: End-to-end testing
+- Vitest: Unit testing
 
 ## Folder Structure
-- [src](Main application code)
-- [public](Public assets)
-- [cypress](Cypress E2E test configuration and test cases)
-- [config files](tailwind.config.js, vite.config.js, postcss.config.js, etc.)
+- src: Main application code
+- public: Public assets
+- cypress: Cypress E2E test configuration and test cases
+- config files: tailwind.config.js, vite.config.js, postcss.config.js, etc.
 
 
 ## Contact
