@@ -73,7 +73,7 @@ export default {
   computed: {
     ...mapStores(useModalStore, useUserStore),
     currentLocale() {
-      return this.$i18n.locale === "ru" ? "Русскый" : "English";
+      return this.$i18n.locale === "ru" ? "Русский" : "English";
     },
   },
   methods: {
