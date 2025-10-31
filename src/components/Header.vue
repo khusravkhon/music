@@ -23,7 +23,7 @@
           <li v-if="!userStore.userLoggedIn">
             <img
               src="/assets/header/arrow-right-to-bracket.png"
-              class="mt-[24px] text-white"
+              class="mt-[24px] text-white cursor-pointer"
               @click.prevent="toggleAuthModal"
               alt=""
               srcset=""
@@ -33,7 +33,7 @@
             <li>
               <router-link class="px-2 text-white" to="/manage-music">
                 <img
-                  class="mx-2"
+                  class="mx-2 cursor-pointer"
                   src="/assets/header/download.png"
                   alt=""
                   srcset=""
@@ -43,7 +43,7 @@
             <li>
               <img
                 src="/assets/header/arrow-right-from-bracket.png"
-                class="mt-[24px] text-white"
+                class="mt-[24px] text-white cursor-pointer"
                 @click.prevent="signOut"
                 alt=""
                 srcset=""
@@ -73,7 +73,7 @@ export default {
   computed: {
     ...mapStores(useModalStore, useUserStore),
     currentLocale() {
-      return this.$i18n.locale === "ru" ? "Русскый" : "English";
+      return this.$i18n.locale === "ru" ? "Русский" : "English";
     },
   },
   methods: {

@@ -20,7 +20,7 @@ export default {
   props: ["url"],
   methods: {
     termsUse() {
-      window.location.href = this.url;
+      window.open(this.url, "_blank");
     },
   },
 };
