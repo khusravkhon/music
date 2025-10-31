@@ -111,9 +111,13 @@
         type="checkbox"
         class="w-4 h-4 float-left -ml-6 mt-1 rounded"
       />
-      <i18n-t class="inline-block" keypath="registar.accept" tag="label">
-        <a href="#">{{ $t("register.tos") }}</a>
+      <i18n-t class="inline-block" keypath="register.accept" tag="label">
+        <a
+          href="https://north-kitty-bef.notion.site/2e8694554f7a48668e1255b27e5a37ba"
+          >{{ $t("register.tos") }}</a
+        >
       </i18n-t>
+
       <ErrorMessage class="text-red-600 block" name="tos" />
     </div>
     <button
